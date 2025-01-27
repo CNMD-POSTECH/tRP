@@ -1,0 +1,22 @@
+sisso_path: '/home/work/gyrudgyrud21/SISSO/tRP/SISSO/run' # sisso path
+save_path: '/home/work/gyrudgyrud21/SISSO/tRP/SISSO/result' # save path
+
+extraction: 
+  active: True # if True, get the common descriptors from the SISSO output
+  max_complexity: 9 # the maximum complexity of the descriptors
+  min_complexity: 1 # the minimum complexity of the descriptors
+  feature_list: ['rA', 'rB', 'rX', 'xX'] # feature list that used in the SISSO input
+
+criterion: 
+  active: False # if True, get the criterion of a descriptor
+  n_value: 1 # An+1BnX3n+1 (n=1,2,3,...)
+  halogen: True # if chalcogen: False, halogen: True
+  chalcogen: False # if chalcogen: True, halogen: False
+  feature_list: ['rA', 'rB', 'rX', 'xX'] # fetures list
+  descriptor: '(((rB/rA))^2+sqrt((rX/rB)))' # a descriptor
+  descriptor_path: '/home/work/gyrudgyrud21/SISSO/tRP/SISSO/result/descriptors.csv' # the path of the descriptor file
+  data_path: '/home/work/gyrudgyrud21/SISSO/tRP/Data/Table.S1_source.csv' # the path of the data file
+  except_source: 'Hybrid' # choose Handbook or ICSD+ or Hybrid
+
+columns:
+  label: Label # label name in the dataset
