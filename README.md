@@ -2,7 +2,7 @@
 
 tRP (**Ruddlesden-Popper Tolerance Factor**) is a descriptor designed to predict stable RP phases. 
 
-![tRP Banner Image](https://github.com/CNMD-POSTECH/tRP/blob/main/.github/CNMD.png?raw=true)
+![tRP Banner Image](https://github.com/CNMD-POSTECH/tRP/blob/main/Figure/tRP.png?raw=true)
 
 ---
 
