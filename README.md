@@ -40,7 +40,7 @@ To extract descriptors, use the following command:
 
 ```bash
 tRP-run 
-    --config='./SISSO/src/config_extraction.yaml'
+    --config=./SISSO/src/config_extraction.yaml
 ```
 
 ### <span style="font-size:larger;">Criterion Extraction</span>
@@ -49,7 +49,7 @@ To extract criteria, use the following command:
 
 ```bash
 tRP-run 
-    --config='./SISSO/src/config_criterion.yaml'
+    --config=./SISSO/src/config_criterion.yaml
 ```
 
 ---
@@ -82,6 +82,6 @@ tRP is distributed under the [MIT License](MIT.md).
 
 This repository includes contributions from Hyo Gyeong Shin, Donghwa Lee, and other collaborators.
 
-<a href="https://github.com/CNMD-POSTECH/GB-CGCNN/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=CNMD-POSTECH/GB-CGCNN" />
+<a href="https://github.com/CNMD-POSTECH/tRP/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=CNMD-POSTECH/tRP" />
 </a>
