@@ -63,6 +63,8 @@ class Out:
                  label='Label',
                  run_path='./',
                  out_path='./',
+                 train_set='./train.csv',
+                 test_set='./test.csv',
                  feature_list=['rA','rB','rX','xX'],
                  operator_list=['+','-','*','/',
                                 '^-1','^2',
@@ -92,8 +94,8 @@ class Out:
         self.descriptors = self.common_descriptor()
         
         # accuracy 계산을 위한 데이터셋 생성
-        self.train_df = pd.read_csv(os.path.join(run_path, 'train.csv'))
-        self.test_df = pd.read_csv(os.path.join(run_path, 'test.csv'))
+        self.train_df = pd.read_csv(train_set)
+        self.test_df = pd.read_csv(test_set)
         for num, folder in enumerate(self.folder_list):
             num = num+1
             fold_df = pd.read_csv(os.path.join(run_path, folder, f'split_{num}.csv'))

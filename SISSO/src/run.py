@@ -10,6 +10,8 @@ def sisso_output(config):
         out = Out(label=config['columns']['label'],
                   run_path=config['sisso_path'],
                   out_path=config['save_path'],
+                  train_set=config['data']['train'],
+                  test_set=config['data']['test'],
                   feature_list=extraction_config['feature_list'],
                   max_complexity=extraction_config['max_complexity'],
                   min_complexity=extraction_config['min_complexity'])

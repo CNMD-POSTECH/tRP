@@ -32,4 +32,6 @@ dependencies = [
 include = ["tRP"]
 
 [project.scripts]
-tRP-run = "SISSO.src.run:main"
+extract-descriptor = "SISSO.src.run:main"
+extract-feature = "SHAP.src.run:main"
+rp-prediction = "SISSO.src.prediction:main"

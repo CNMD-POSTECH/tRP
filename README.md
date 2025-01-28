@@ -34,12 +34,30 @@ Before running the commands, make sure to set the `PYTHONPATH` environment varia
 export PYTHONPATH=$(pwd)
 ```
 
+### <span style="font-size:larger;">Predicton RP Phase</span>
+
+To predict stable RP phase, use the following command:
+
+```bash
+rp-prediction
+    --config=./SISSO/src/config_prediction.yaml
+```
+
+### <span style="font-size:larger;">Feature Extraction</span>
+
+To extract important features, use the following command:
+
+```bash
+extract-feature 
+    --config=./SHAP/src/config_shap.yaml
+```
+
 ### <span style="font-size:larger;">Descriptor Extraction</span>
 
 To extract descriptors, use the following command:
 
 ```bash
-tRP-run 
+extract-descriptor 
     --config=./SISSO/src/config_extraction.yaml
 ```
 
@@ -48,7 +66,7 @@ tRP-run
 To extract criteria, use the following command:
 
 ```bash
-tRP-run 
+extract-descriptor
     --config=./SISSO/src/config_criterion.yaml
 ```
 

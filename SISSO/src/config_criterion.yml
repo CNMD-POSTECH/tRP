@@ -1,11 +1,4 @@
-sisso_path: '/scratch/x3100a06/tRP/SISSO/run' # sisso path
 save_path: '/scratch/x3100a06/tRP/SISSO/result' # save path
-
-extraction: 
-  active: False # if True, get the common descriptors from the SISSO output
-  max_complexity: 9 # the maximum complexity of the descriptors
-  min_complexity: 1 # the minimum complexity of the descriptors
-  feature_list: ['rA', 'rB', 'rX', 'xX'] # feature list that used in the SISSO input
 
 criterion: 
   active: True # if True, get the criterion of a descriptor

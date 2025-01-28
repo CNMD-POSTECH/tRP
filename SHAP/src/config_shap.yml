@@ -1,0 +1,19 @@
+random_state: 42
+save_path: /scratch/x3100a06/tRP/SHAP/result
+
+data: 
+  train: '/scratch/x3100a06/tRP/Data/train_source.csv'
+  test: '/scratch/x3100a06/tRP/Data/test_source.csv'
+
+shap: 
+  features: ['nA','nB','nX', 'rA','rB','rX', 'vA','vB','vX', 'xA','xB','xX', 'iA','iB','iX']
+  target: ['Label']
+
+randomforest:
+  bootstrap: True
+  criterion: 'gini'
+  max_depth: 100
+  max_features: 1.0
+  min_samples_leaf: 1
+  min_samples_split: 5
+  n_estimators: 100
