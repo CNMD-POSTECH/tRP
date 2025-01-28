@@ -1,12 +1,10 @@
 import os
 import yaml
+import argparse
 from SISSO.src.code.descriptors import Out
 from SISSO.src.code.criterion import Out_bias
 
-def main(config_path):
-    with open(config_path, 'r') as f:
-        config = yaml.load(f, Loader=yaml.FullLoader)
-    
+def sisso_output(config):    
     if config['extraction']['active']:
         extraction_config = config['extraction']
         out = Out(label=config['columns']['label'],
@@ -48,4 +46,4 @@ def main():
     parser.add_argument("--config", type=str, required=True, help="Path to the YAML config file.")
     args = parser.parse_args()
     config = load_config(args.config)
-    main(config)
+    sisso_output(config)

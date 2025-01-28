@@ -1,5 +1,5 @@
-sisso_path: '/home/work/gyrudgyrud21/SISSO/tRP/SISSO/run' # sisso path
-save_path: '/home/work/gyrudgyrud21/SISSO/tRP/SISSO/result' # save path
+sisso_path: '/scratch/x3100a06/tRP/SISSO/run' # sisso path
+save_path: '/scratch/x3100a06/tRP/SISSO/result' # save path
 
 extraction: 
   active: False # if True, get the common descriptors from the SISSO output
@@ -14,8 +14,8 @@ criterion:
   chalcogen: False # if chalcogen: True, halogen: False
   feature_list: ['rA', 'rB', 'rX', 'xX'] # fetures list
   descriptor: '(((rB/rA))^2+sqrt((rX/rB)))' # a descriptor
-  descriptor_path: '/home/work/gyrudgyrud21/SISSO/tRP/SISSO/result/descriptors.csv' # the path of the descriptor file
-  data_path: '/home/work/gyrudgyrud21/SISSO/tRP/Data/Table.S1_source.csv' # the path of the data file
+  descriptor_path: '/scratch/x3100a06/tRP/SISSO/result/descriptors.csv' # the path of the descriptor file
+  data_path: '/scratch/x3100a06/tRP/Data/Table.S1_source.csv' # the path of the data file
   except_source: 'Hybrid' # choose Handbook or ICSD+ or Hybrid
 
 columns:

@@ -28,6 +28,12 @@ pip install -e .
 
 ## <span style="font-size:larger;">Usage</span>
 
+Before running the commands, make sure to set the `PYTHONPATH` environment variable:
+
+```bash
+export PYTHONPATH=$(pwd)
+```
+
 ### <span style="font-size:larger;">Descriptor Extraction</span>
 
 To extract descriptors, use the following command:

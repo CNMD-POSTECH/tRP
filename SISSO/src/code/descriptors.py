@@ -92,8 +92,8 @@ class Out:
         self.descriptors = self.common_descriptor()
         
         # accuracy 계산을 위한 데이터셋 생성
-        self.train_df = pd.read_csv(os.path.join(run_path, 'Result', 'train.csv'))
-        self.test_df = pd.read_csv(os.path.join(run_path, 'Result', 'test.csv'))
+        self.train_df = pd.read_csv(os.path.join(run_path, 'train.csv'))
+        self.test_df = pd.read_csv(os.path.join(run_path, 'test.csv'))
         for num, folder in enumerate(self.folder_list):
             num = num+1
             fold_df = pd.read_csv(os.path.join(run_path, folder, f'split_{num}.csv'))
