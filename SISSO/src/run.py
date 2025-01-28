@@ -4,8 +4,8 @@ import argparse
 from SISSO.src.code.descriptors import Out
 from SISSO.src.code.criterion import Out_bias
 
-def sisso_output(config):    
-    if config['extraction']['active']:
+def sisso_output(config):
+    try:
         extraction_config = config['extraction']
         out = Out(label=config['columns']['label'],
                   run_path=config['sisso_path'],
@@ -15,8 +15,7 @@ def sisso_output(config):
                   feature_list=extraction_config['feature_list'],
                   max_complexity=extraction_config['max_complexity'],
                   min_complexity=extraction_config['min_complexity'])
-        
-    if config['criterion']['active']:
+    except:
         criterion_config = config['criterion']
         chalcogen = criterion_config['chalcogen']
         if chalcogen:

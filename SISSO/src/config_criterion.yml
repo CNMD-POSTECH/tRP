@@ -1,7 +1,6 @@
 save_path: '/scratch/x3100a06/tRP/SISSO/result' # save path
 
 criterion: 
-  active: True # if True, get the criterion of a descriptor
   n_value: 1 # An+1BnX3n+1 (n=1,2,3,...)
   halogen: True # if chalcogen: False, halogen: True
   chalcogen: False # if chalcogen: True, halogen: False

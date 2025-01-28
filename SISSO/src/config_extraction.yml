@@ -6,7 +6,6 @@ data:
   test: '/scratch/x3100a06/tRP/Data/test.csv'
 
 extraction: 
-  active: True # if True, get the common descriptors from the SISSO output
   max_complexity: 9 # the maximum complexity of the descriptors
   min_complexity: 1 # the minimum complexity of the descriptors
   feature_list: ['rA', 'rB', 'rX', 'xX'] # feature list that used in the SISSO input
