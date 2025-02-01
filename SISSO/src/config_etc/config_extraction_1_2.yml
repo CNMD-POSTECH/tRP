@@ -1,0 +1,14 @@
+sisso_path: '/scratch/x3100a06/tRP/SISSO/run/1_2' # sisso path
+save_path: '/scratch/x3100a06/tRP/SISSO/result/1_2' # save path
+
+data:
+  train: '/scratch/x3100a06/tRP/Data/train_form_source.csv'
+  test: '/scratch/x3100a06/tRP/Data/test_form_source.csv'
+
+extraction: 
+  max_complexity: 9 # the maximum complexity of the descriptors
+  min_complexity: 1 # the minimum complexity of the descriptors
+  feature_list: ['rA', 'rB', 'rX', 'xX'] # feature list that used in the SISSO input
+
+columns:
+  label: f.e # label name in the dataset

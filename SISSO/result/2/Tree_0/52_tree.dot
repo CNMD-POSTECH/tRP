@@ -1,0 +1,9 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Descriptor <= 0.753\nentropy = 0.95\nsamples = 274\nvalue = [280, 164]\nclass = class_1", fillcolor="#f4cbad"] ;
+1 [label="entropy = 0.068\nsamples = 148\nvalue = [243, 2]\nclass = class_1", fillcolor="#e5823b"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="entropy = 0.693\nsamples = 126\nvalue = [37, 162]\nclass = class_2", fillcolor="#66b3eb"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}

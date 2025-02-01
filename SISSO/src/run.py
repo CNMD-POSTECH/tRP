@@ -1,6 +1,7 @@
 import os
 import yaml
 import argparse
+#from SISSO.src.code.descriptors_reg import Out
 from SISSO.src.code.descriptors import Out
 from SISSO.src.code.criterion import Out_bias
 
