@@ -103,3 +103,5 @@ This repository includes contributions from Hyo Gyeong Shin, Donghwa Lee, and ot
 <a href="https://github.com/CNMD-POSTECH/tRP/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=CNMD-POSTECH/tRP" />
 </a>
+
+Made with [contrib.rocks](https://contrib.rocks).
